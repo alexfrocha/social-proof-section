@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+    --very-dark-magenta-color: hsl(300, 43%, 22%);
+    --soft-pink-color: hsl(333, 80%, 67%);
+    --dark-grayish-magenta-color: hsl(303, 10%, 53%);
+    --light-grayish-magenta-color: hsl(300, 24%, 96%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: white;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    top: 0;
+    width: 100vh;
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vh;
+}
+
+.container {
+    margin: 6rem 8rem;
+    margin-bottom: 0;
+    z-index: 99;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-info-title {
+    font-size: 47px;
+    width: 400px;
+    color: var(--very-dark-magenta-color);
+}
+
+.head-info-text {
+    width: 360px;
+    line-height: 1.2rem;
+    color: var(--dark-grayish-magenta-color);
+    margin-top: 1.2rem;
+    font-size: 15px;
+}
+
+.head-star-card:first-child {
+    margin-top: .3rem;
+}
+
+.head-stars-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.head-stars-group>*:nth-child(2) {
+    align-self: center;
+}
+
+.head-stars-group>*:nth-child(3) {
+    align-self: end;
+}
+
+.head-star-card {
+    background-color: var(--light-grayish-magenta-color);
+    width: 450px;
+    border-radius: 5px;
+    margin-top: .9rem;
+}
+
+.head-star-content {
+    padding: .8rem 2rem;
+    font-weight: 500;
+    color: var(--very-dark-magenta-color);
+}
+
+
+.head-star-classification {
+    margin-left: .3rem;
+    margin-top: 2.9px;
+}
+
+.card-group {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    height: 210px;
+}
+
+.card {
+    background-color: var(--very-dark-magenta-color);
+    width: 300px;
+    border-radius: 5px;
+    height: 180px;
+}
+
+.card-group>*:nth-child(2) {
+    align-self: center;
+}
+
+
+.card-group>*:nth-child(3) {
+    align-self: end;
+}
+
+
+.card-user-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+}
+
+.card-user-info {
+    margin-left: 1.5rem;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-user-name {
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.card-user-role {
+    color: var(--soft-pink-color);
+}
+
+.card-message {
+    padding-top: 1rem;
+    color: var(--white-color);
+    line-height: 1rem;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1194px) {
+    .container {
+        margin: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        text-align: center;
+    }
+    .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head-info-title {
+        width: auto;
+        font-size: 30px;
+    }
+
+    .head-info-text {
+        width: auto;
+    }
+
+    .head-stars-group {
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .head-stars-group>*:last-child {
+        align-self: center;
+    }
+
+    .head-star-card {
+        width: 320px;
+    }
+
+    .head-star-content {
+        font-size: 10px;
+    }
+
+    .head-star {
+        width: 10px;
+    }
+
+    .card-group {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 17rem;
+    }
+
+    .card {
+        margin-top: 1rem;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .card-group>*:last-child {
+        align-self: center;
+    }
+
+    .card-user-image {
+        margin-bottom: .5rem;
+    }
+
+    .card-user>*:nth-child(2) {
+        margin-left: .4rem;
+        text-align: start;
+    }
+
+    .card-message {
+        padding-top: .3rem;
+    }
+
+    .bg-pattern-top {
+        width: 100%;
+    }
+
+    .bg-pattern-bottom {
+        display: none;
+    }
+
+}
